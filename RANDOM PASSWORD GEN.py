@@ -14,6 +14,12 @@ if a== 'Yes' :
         pw = pw + random.choice(characters) #adds a random choice to the string at every instance of i
     print(pw) # prints final pw
     
+    # code for saving file :
+    password = (pw)
+    saveFile = open('RandomPassword.txt','x') # RandomPassword is file name 
+    saveFile.write(str(password))
+    saveFile.close() #file is saved where the main project is 
+    
 elif a=='No':
     print ("Have a nice day!")
     
@@ -35,4 +41,10 @@ else :
     for i in range (length):
         pw = pw + random.choice(characters)
     print(pw)
+    
+     # code for saving file :
+    password = (pw)
+    saveFile = open('RandomPassword.txt','x') # RandomPassword is file name 
+    saveFile.write(str(password))
+    saveFile.close() #file is saved where the main project is 
       
